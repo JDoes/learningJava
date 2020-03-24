@@ -20,6 +20,7 @@ public class Main {
 
         for (num = 2; num < lim; num++) {
             boolean isPrime = true;
+            //div * div < num effectively means div < sqrt(num), if a sqrt does exist, no point in checking primeness
             for (div = 2; div * div < num; div++) {
                 if (num % div == 0) {
                     isPrime = false;
