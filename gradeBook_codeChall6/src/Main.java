@@ -57,10 +57,13 @@ public class Main {
         double avgPercent = ((double)avgScore/maxScore)*100;
         double lowScorePercent = ((double)lowScore/maxScore)*100;
 
-        System.out.printf("\n\nHigh score = %d, which is %.2f%%.", highScore, highScorePercent);
-        System.out.printf("\nAverage score = %d , which is %.2f%%.", avgScore, avgPercent);
-        System.out.printf("\nLow score = %d, which is %.2f%%.", lowScore, lowScorePercent);
-        System.out.println();
-
+        System.out.printf("\n\nOn a test worth %d points, taken by %d people...", maxScore, numStudent);
+        System.out.println("\nLow Score: \t\t% Score:");
+        System.out.printf("\t%d \t\t\t%.2f%%", lowScore, lowScorePercent);
+        System.out.println("\n\nAvg Score: \t\t% Score:");
+        System.out.printf("\t%d \t\t\t%.2f%%", avgScore, avgPercent);
+        System.out.println("\n\nHigh Score: \t% Score:");
+        System.out.printf("\t%d \t\t\t%.2f%%", highScore, highScorePercent);
+        
     }
 }
