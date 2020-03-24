@@ -20,7 +20,8 @@ public class Main {
 
         for (num = 2; num < lim; num++) {
             boolean isPrime = true;
-            //div * div < num effectively means div < sqrt(num), if a sqrt does exist, no point in checking primeness
+            //div * div < num effectively means div < sqrt(num). sqrt of a number lies at the middle of the list of prime factors.
+            //see: https://stackoverflow.com/questions/5811151/why-do-we-check-up-to-the-square-root-of-a-prime-number-to-determine-if-it-is-pr
             for (div = 2; div * div < num; div++) {
                 if (num % div == 0) {
                     isPrime = false;
